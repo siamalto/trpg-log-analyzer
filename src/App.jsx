@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <h1>🎲 TRPGセッションログ集計ツール</h1>
+        <h1>TRPGセッションログ集計ツール</h1>
       </header>
       <main>
         <LogUploader onDataLoaded={setSessionData} />
