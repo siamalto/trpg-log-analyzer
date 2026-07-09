@@ -182,3 +182,28 @@
     border-right-color: var(--border);
   }
 }
+
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+
+  th,
+  td {
+    border: 1px solid var(--border);
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: var(--accent-bg);
+  }
+}
