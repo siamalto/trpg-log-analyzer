@@ -30,6 +30,7 @@ trpg-log-analyzer/
 │  ├─ main.jsx              # React エントリーポイント
 │  ├─ index.css             # 共通スタイル
 │  ├─ SampleApp.jsx         # サンプル表示用の実装
+│  ├─ ChatViewer.css        # チャット表示用スタイル
 │  ├─ assets/               # 画像・アイコン等
 │  ├─ components/           # UI コンポーネント
 │  │  ├─ ChatViewer.jsx     # チャットログの表示
