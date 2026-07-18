@@ -1,20 +1,12 @@
 import { analizeCocofoliaLog } from '../utils/logAnalyzer';
 
-export default function StatisticsDashboard({ data }) {
+export default function ResultViewer({ data }) {
   if (!data) return null;
-
   const analizedData = analizeCocofoliaLog(data);
-
-  // const stats = Array.from(data.characters.values()).map(char => ({
-  //   name: char.name,
-  //   messages: char.messageCount,
-  //   diceCount: char.diceRolls.length,
-  //   activeTime: `${char.firstMessage} - ${char.lastMessage}`
-  // }));
 
   return (
     <div className="dashboard">
-      <h2>📈 セッション統計</h2>
+      <h2>Session Result</h2>
       <div className="stats-container">
         <div className="stats-section">
           <h3>タブ別統計</h3>
