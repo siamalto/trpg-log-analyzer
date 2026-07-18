@@ -25,15 +25,17 @@ If you are developing a production application, we recommend using TypeScript wi
 trpg-log-analyzer/
 ├─ public/                  # 静的アセット
 ├─ src/                     # アプリケーション本体
-│  ├─ App.jsx               # メイン画面の構成
+│  ├─ App.jsx               # アプリ全体のレイアウトと状態管理
 │  ├─ App.css               # メイン画面のスタイル
 │  ├─ main.jsx              # React エントリーポイント
 │  ├─ index.css             # 共通スタイル
-│  ├─ SampleApp.jsx         # サンプル表示用コンポーネント
+│  ├─ SampleApp.jsx         # サンプル表示用の実装
 │  ├─ assets/               # 画像・アイコン等
 │  ├─ components/           # UI コンポーネント
-│  │  ├─ LogUploader.jsx    # ログアップロードUI
-│  │  └─ StatisticsDashboard.jsx  # 統計ダッシュボード
+│  │  ├─ ChatViewer.jsx     # チャットログの表示
+│  │  ├─ LogUploader.jsx    # ログアップロード UI
+│  │  ├─ LogViewer.jsx      # ログ内容の表示
+│  │  └─ ResultViewer.jsx   # 集計結果の表示
 │  └─ utils/                # ログ解析・HTML解析ロジック
 │     ├─ htmlParser.js      # HTML パース処理
 │     └─ logAnalyzer.js     # ログ集計・分析処理
