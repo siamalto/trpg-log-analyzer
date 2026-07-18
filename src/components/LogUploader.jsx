@@ -26,7 +26,6 @@ export default function LogUploader({ onDataLoaded }) {
 
   return (
     <div className="uploader">
-      <h2>ココフォリアログを読み込む</h2>
       <input
         ref={fileInputRef}
         type="file"
@@ -39,7 +38,7 @@ export default function LogUploader({ onDataLoaded }) {
         onClick={() => fileInputRef.current?.click()}
         disabled={loading}
       >
-        {loading ? '読み込み中...' : 'HTMLファイルを選択'}
+        {loading ? '読み込み中...' : 'logファイルを読み込む'}
       </button>
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>

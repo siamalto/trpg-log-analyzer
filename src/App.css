@@ -1,3 +1,22 @@
+.app {
+  min-height: 100vh;
+}
+
+.main-content {
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.main-content--empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

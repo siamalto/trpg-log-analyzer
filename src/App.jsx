@@ -8,10 +8,8 @@ function App() {
 
   return (
     <div className="app">
-      <header>
-        <h1>TRPGセッションログ集計ツール</h1>
-      </header>
-      <main>
+      <main className={sessionData ? 'main-content' : 'main-content main-content--empty'}>
+        <h1>TRPG Log Analyzer</h1>
         <LogUploader onDataLoaded={setSessionData} />
         {sessionData && <StatisticsDashboard data={sessionData} />}
       </main>
